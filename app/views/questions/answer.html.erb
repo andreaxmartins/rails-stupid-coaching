@@ -1,0 +1,32 @@
+<div class="m-4">
+  <h1>Stupid Coaching</h1>
+</div>
+
+<div class="d-flex p-2" style="height: 100px;">
+  <div class="vr mx-4"></div>
+  <figure>
+    <blockquote class="blockquote">
+      <p><%= params[:answer] %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      You
+    </figcaption>
+  </figure>
+</div>
+
+
+<div class="d-flex p-2" style="height: 100px;">
+  <div class="vr mx-4"></div>
+  <figure>
+    <blockquote class="blockquote">
+      <p><%= @answer %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Coach
+    </figcaption>
+  </figure>
+</div>
+
+<div class="m-4">
+  <%= link_to "Ask a new question", ask_path %>
+</div>
